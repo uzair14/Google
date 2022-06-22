@@ -1,0 +1,80 @@
+/* 
+Figma Design: https://www.figma.com/file/HCLf30tgg5o3BexjbimXNs/R%26R?node-id=0%3A1
+See fix-n-flex.css for solution using position and flexbox mix.
+See grid.css for grid solution.
+*/
+
+:root {
+    --stripsheight: 5vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: black;
+}
+
+aside {
+    background-color: black;
+    text-align: left;
+    color: white;
+}
+
+body { 
+    color: black;
+    font-family: Arial;
+    text-align: center;
+    background-color: yellow;
+}
+
+header, footer, aside, section, nav {
+    padding: 10px;
+}
+
+
+header {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+header, footer {
+    color: white;
+    background-color:  aqua;
+}
+
+a {
+    color:white;
+}
+
+a:hover {
+    color: blue;
+}
+
+article section {
+    font-family: 'Anton';
+    font-size: 1.2rem;
+    color: black;
+    border: 1px solid white;
+    z-index: -1;
+    padding-bottom: 30px;
+}
+p{
+    z-index: 1;
+ }
+
+a::after, a::before { content: ' | '}
+
+@media only screen and (orientation: portrait) {
+    article section {
+        background-color: green;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    :root {
+        --stripsheight: 45px;
+    }
+}
