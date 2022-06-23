@@ -3,6 +3,18 @@ const app = express()
 const cors = require('cors');
 const port = 3000
 
+list = [
+  {name: 'Arsenal FC', link: 'https://www.arsenal.com/'},
+  {name: 'Chelsea FC', link: 'https://www.chelseafc.com/en'},
+  {name: 'Crystal Palace FC', link: 'https://www.cpfc.co.uk/'},
+  {name: 'Everton FC', link: 'https://www.evertonfc.com/'},
+  {name: 'Leicester City FC', link: 'https://www.lcfc.com/'},
+  {name: 'Liverpool FC', link: 'https://www.liverpoolfc.com/'},
+  {name: 'Man City FC', link: 'https://www.mancity.com/'},
+  {name: 'Man United FC', link: 'https://www.manutd.com/'},
+  {name: 'Nottingham Forest FC', link: 'https://www.nottinghamforest.co.uk/'},
+  {name: 'Tottenham FC', link: 'https://www.tottenhamhotspur.com/'}
+]
 footballTeams = [
     {Name: "Arsenal", SN: "Emirates", img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/160px-Arsenal_FC.svg.png" },
     {Name: "Chelsea", SN: "Stamford Bridge", img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/180px-Chelsea_FC.svg.png"},
@@ -74,15 +86,6 @@ app.get('/chelseaplayer', (req, res) => {
     res.send(randomValue);
   })
 
-  app.get('/manCityPlayers', (req, res) => {
-    const randomValue = manCityPlayers[parseInt(Math.random()* manCityPlayers.length)]
-    res.send(randomValue);
-  })
-
-  app.get('/liverpoolPlayers', (req, res) => {
-    const randomValue = liverpoolPlayers[parseInt(Math.random()* liverpoolPlayers.length)]
-    res.send(randomValue);
-  })
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
