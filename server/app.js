@@ -86,6 +86,20 @@ app.get('/chelseaplayer', (req, res) => {
     res.send(randomValue);
   })
 
+  app.get('/manCityPlayers', (req, res) => {
+    const randomValue = manCityPlayers[parseInt(Math.random()* manCityPlayers.length)]
+    res.send(randomValue);
+  })
+
+  app.get('/liverpoolPlayers', (req, res) => {
+    const randomValue = liverpoolPlayers[parseInt(Math.random()* liverpoolPlayers.length)]
+    res.send(randomValue);
+  })
+
+  app.get('/list', (req, res) => {
+    res.send(list)
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
