@@ -30,7 +30,7 @@
     <!-- Main body of google -->
     <main>
       <center>
-        <img src="/images/google.png" width="20%" height="5%" id="googleimg">
+        <img src="../Google/images/google.png" width="20%" height="5%" id="googleimg">
         <!-- Search bar -->
         <div class="searchBar">
           <form id="application" action="">
@@ -42,9 +42,15 @@
         <!--Buttons -->
         <section>
           <div><button id ="teams" class = "btn1" onclick="window.location.href='teams.html'">Google Search</button></div>
-          <div><button class = "btn2" onclick="window.location.href='chelsea.html'">I'm feeling lucky</button></div>
+          <div><button class = "btn2" onclick="changeTeam()">I'm feeling lucky</button></div>
         </section>
       </center>
     </main>
+    <script>
+      function changeTeam(){
+        let team = ["Chelsea.html","manCity.html","liverpool.html"];
+         window.location.href = team[Math.floor(Math.random()*team.length)]
+        };
+    </script>
   </body>
 </html>

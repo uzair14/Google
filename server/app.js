@@ -44,6 +44,34 @@ chelseaPlayers = [
     {Name: "Lukaku", Position: "ST", Age: "29", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p66749.png" }
 ]
 
+manCityPlayers = [
+  {Name: "Ederson", Position: "GK", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p121160.png"},
+  {Name: "Zinchenko", Position: "CB", Age: "25", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p206325.png"},
+  {Name: "Stones", Position: "CB", Age: "28", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p97299.png" },
+  {Name: "Cancelo", Position: "CB", Age: "28", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p121145.png" },
+  {Name: "Kyle", Position: "RB", Age: "32", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p58621.png" },
+  {Name: "De Bruyne", Position: "CM", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p61366.png" },
+  {Name: "Foden", Position: "CM", Age: "22", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p209244.png" },
+  {Name: "Rodri", Position: "CM", Age: "26", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p220566.png"},
+  {Name: "Sterling", Position: "LW", Age: "27", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p103955.png" },
+  {Name: "Mahrez", Position: "RW", Age: "31", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p103025.png" },
+  {Name: "Grealish", Position: "ST", Age: "26", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p114283.png" }
+]
+
+liverpoolPlayers = [
+  {Name: "Alison", Position: "GK", Age: "29", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p116535.png"},
+  {Name: "Van Dijk", Position: "CB", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p97032.png"},
+  {Name: "Gomez", Position: "CB", Age: "25", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p171287.png" },
+  {Name: "Matip", Position: "CB", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p60914.png" },
+  {Name: "Robertson", Position: "LB", Age: "28", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p122798.png" },
+  {Name: "Fabinho", Position: "CM", Age: "28", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p116643.png" },
+  {Name: "Henderson", Position: "CM", Age: "32", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p56979.png" },
+  {Name: "Keita", Position: "CM", Age: "27", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p175592.png"},
+  {Name: "Mane", Position: "LW", Age: "27", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p110979.png" },
+  {Name: "Saleh", Position: "RW", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p118748.png" },
+  {Name: "Firmino", Position: "ST", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p92217.png" }
+]
+
 app.use(cors());
 
 app.get('/', (req, res) => res.send('Hello World!'))
@@ -57,10 +85,6 @@ app.get('/chelseaplayer', (req, res) => {
     const randomValue = chelseaPlayers[parseInt(Math.random()* chelseaPlayers.length)]
     res.send(randomValue);
   })
-
-  app.get('/list', (req, res) => {
-    res.send(list)
-})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
