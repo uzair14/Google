@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: rgb(0, 119, 255);
   }
   
   section {
@@ -39,7 +39,7 @@ body {
     position: absolute;
     top:0;
     left: 0;
-    color: blue;
+    color: rgba(0, 110, 255, 0.726);
     font-family: 'Anton', sans-serif;
     font-size: 25px;
     background-color: white;

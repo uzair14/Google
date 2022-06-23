@@ -33,9 +33,15 @@
         <!--Buttons -->
         <section>
           <div><button id ="teams" onclick="window.location.href='teams.html'">Google Search</button></div>
-          <div><button onclick="window.location.href='chelsea.html'">I'm feeling lucky</button></div>
+          <div><button onclick="changeTeam()">I'm feeling lucky</button></div>
         </section>
       </center>
     </main>
+    <script>
+      function changeTeam(){
+        let team = ["Chelsea.html","manCity.html"];
+         window.location.href = team[Math.round(Math.random())]
+        };
+    </script>
   </body>
 </html>
