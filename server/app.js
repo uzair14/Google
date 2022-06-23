@@ -46,6 +46,20 @@ manCityPlayers = [
   {Name: "Grealish", Position: "ST", Age: "26", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p114283.png" }
 ]
 
+liverpoolPlayers = [
+  {Name: "Alison", Position: "GK", Age: "29", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p116535.png"},
+  {Name: "Van Dijk", Position: "CB", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p97032.png"},
+  {Name: "Gomez", Position: "CB", Age: "25", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p171287.png" },
+  {Name: "Matip", Position: "CB", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p60914.png" },
+  {Name: "Robertson", Position: "LB", Age: "28", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p122798.png" },
+  {Name: "Fabinho", Position: "CM", Age: "28", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p116643.png" },
+  {Name: "Henderson", Position: "CM", Age: "32", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p56979.png" },
+  {Name: "Keita", Position: "CM", Age: "27", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p175592.png"},
+  {Name: "Mane", Position: "LW", Age: "27", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p110979.png" },
+  {Name: "Saleh", Position: "RW", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p118748.png" },
+  {Name: "Firmino", Position: "ST", Age: "30", img: "https://resources.premierleague.com/premierleague/photos/players/250x250/p92217.png" }
+]
+
 app.use(cors());
 
 app.get('/', (req, res) => res.send('Hello World!'))
@@ -59,8 +73,14 @@ app.get('/chelseaplayer', (req, res) => {
     const randomValue = chelseaPlayers[parseInt(Math.random()* chelseaPlayers.length)]
     res.send(randomValue);
   })
+
   app.get('/manCityPlayers', (req, res) => {
-    const randomValue = manCityPlayers[parseInt(Math.random()* chelseaPlayers.length)]
+    const randomValue = manCityPlayers[parseInt(Math.random()* manCityPlayers.length)]
+    res.send(randomValue);
+  })
+
+  app.get('/liverpoolPlayers', (req, res) => {
+    const randomValue = liverpoolPlayers[parseInt(Math.random()* liverpoolPlayers.length)]
     res.send(randomValue);
   })
 app.listen(port, () => {

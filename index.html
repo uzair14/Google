@@ -21,11 +21,11 @@
     <!-- Main body of google -->
     <main>
       <center>
-        <img src="/images/google.png" width="20%" height="5%" id="googleimg">
+        <img src="../Google/images/google.png" width="20%" height="5%" id="googleimg">
         <!-- Search bar -->
         <div>
           <div id="maindiv">
-            <span><img src="/images/th (1).jpg"></span>
+            <span><img src="../Google/images/th (1).jpg"></span>
             <span id="inputspan"><input type="text" name="search"></span>
             <span><img src="images/th (2).jpg"></span>
           </div>
@@ -39,8 +39,8 @@
     </main>
     <script>
       function changeTeam(){
-        let team = ["Chelsea.html","manCity.html"];
-         window.location.href = team[Math.round(Math.random())]
+        let team = ["Chelsea.html","manCity.html","liverpool.html"];
+         window.location.href = team[Math.floor(Math.random()*team.length)]
         };
     </script>
   </body>
