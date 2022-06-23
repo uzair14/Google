@@ -3,7 +3,7 @@ const app = express()
 const cors = require('cors');
 const port = 3000
 
-list = [
+results = [
   {name: 'Arsenal FC', link: 'https://www.arsenal.com/'},
   {name: 'Chelsea FC', link: 'https://www.chelseafc.com/en'},
   {name: 'Crystal Palace FC', link: 'https://www.cpfc.co.uk/'},
@@ -76,12 +76,16 @@ app.use(cors());
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
+app.get('/results', (req, res) => {
+  res.send(results)
+})
+
 // To do: Create a route for retrieving all quotes
 app.get('/teams', (req, res) => {
   res.send(footballTeams);
 })
 
-app.get('/chelseaplayer', (req, res) => {
+app.get('/chelseaplayers', (req, res) => {
     const randomValue = chelseaPlayers[parseInt(Math.random()* chelseaPlayers.length)]
     res.send(randomValue);
   })
@@ -95,10 +99,6 @@ app.get('/chelseaplayer', (req, res) => {
     const randomValue = liverpoolPlayers[parseInt(Math.random()* liverpoolPlayers.length)]
     res.send(randomValue);
   })
-
-  app.get('/list', (req, res) => {
-    res.send(list)
-})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)

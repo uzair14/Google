@@ -1,12 +1,12 @@
 body {
-    background-image: url('images/manCityLogo2.jpg');
+    background-image: url('/client/images/football-chelsea-fc-logo-sport-wallpaper.jpg');
     background-size: cover;
     background-position: center;
   
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 119, 255);
+    color: blue;
   }
   
   section {
@@ -39,7 +39,7 @@ body {
     position: absolute;
     top:0;
     left: 0;
-    color: rgba(0, 110, 255, 0.726);
+    color: blue;
     font-family: 'Anton', sans-serif;
     font-size: 25px;
     background-color: white;

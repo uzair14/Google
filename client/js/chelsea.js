@@ -1,5 +1,5 @@
 const fetchPlayer = async () => {
-    const response = await fetch('http://localhost:3000/chelseaplayer/');
+    const response = await fetch('http://localhost:3000/chelseaplayers/');
     const data = await response.json();
     //console.log(data);
     const descrip = document.getElementById('text');

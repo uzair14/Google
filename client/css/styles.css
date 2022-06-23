@@ -101,7 +101,7 @@ ul{
   button:hover{
     border: 1px solid gray;
   }
-  .searchBar {
+  .googleSearch {
     /* background-color: #ffffff; */
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@ ul{
   /* justify-content: center; */
   height: 100%;
 }
-.searchBar > form {
+.googleSearch > form {
     background-color: #ffffff;
     min-height: 45px;
     min-width: 560px;
@@ -138,11 +138,11 @@ form input[type=text] {
 }
 
 .ptli {
-  color: cornflowerblue;
+  color: black;
 }
 
-@media only screen and (max-width: 600px) {
-  .searchBar > #application {
+@media only screen and (max-width: 500px) {
+  .searchBar > form {
       min-width: 75vw;
   }
 }
