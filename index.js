@@ -7,7 +7,7 @@
 }*/
 
 function getAllTeams(){
-    fetch('http://localhost:3000/teams')
+    fetch(`http://localhost:3000/teams`)
         .then(r => r.json())
         .then(appendTeams)
         .catch(console.warn)

@@ -1,4 +1,11 @@
 /* Styling of navigation bar */
+body {
+  background: url("https://images.alphacoders.com/115/thumb-1920-1151871.png") no-repeat center center fixed; 
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
 #navdiv{
     display:flex;
     width:17%;
@@ -7,9 +14,12 @@
     margin-top: 1%;
     height:35px;
   }
-  nav img{
+  .c{
+    color: white;
+  }
+  nav svg{
     margin-top: 5px;
-    width: 25px
+    width: 25px;
   }
   #googleimg{
     margin-top: 100px;
@@ -72,13 +82,8 @@
     background-color: lightgrey;
     color:black;
   }
-  ul{
-    display: flex;
-    width: 30%;
-    padding-left: 0px;
-    list-style: none;
-    justify-content: space-around;
-    margin: 6px;
+ul{
+    text-align: left;
   }
   #Bottomdiv{
     display:flex;
@@ -96,3 +101,48 @@
   button:hover{
     border: 1px solid gray;
   }
+  .searchBar {
+    /* background-color: #ffffff; */
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100%;
+}
+.searchBar > form {
+    background-color: #ffffff;
+    min-height: 45px;
+    min-width: 560px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    color: #6f7075;
+}
+
+form input[type=text] {
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    border-radius: 0 25px 25px 0;
+    font-size: 1rem;
+}
+
+#pt {
+  list-style: none;
+}
+
+.ptli {
+  color: cornflowerblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchBar > #application {
+      min-width: 75vw;
+  }
+}

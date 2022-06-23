@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <!-- This link tag is used to link html file with css file -->
     <link rel="stylesheet" href="styles.css">
-    <!-- <script defer src="index.js"></script> -->
+    <script defer src="homepage.js"></script>
     <title>Google</title>
   </head>
   <body>
@@ -13,8 +13,17 @@
       <div id="navdiv">
         <a href="https://www.google.com/gmail/about/#" class="c">Gmail</a>
         <a href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl" class="c">Images</a>
-        <div><img src="images/th.jpg"></div>
-        <div><button type="submit" name="button">Sign In</button></div>
+        <div><a aria-label="Google apps" href="https://www.google.co.uk/intl/en/about/products"
+          aria-expanded="false" role="button" tabindex="0">
+          <svg id="svg" focusable="false" viewBox="0 0 24 24" width="30px" heigth="30px">
+              <path
+                  d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+              </path>
+          </svg>
+      </a>
+    </div>
+    <a href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Den%26sa%3DX%26ved%3D0ahUKEwitg-mh88P4AhVAS0EAHVeoBDYQPAgI&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+        <div><button type="submit" name="button">Sign In</button></a></div>
       </div>
     </nav>
     <!--End of navigation -->
@@ -23,33 +32,18 @@
       <center>
         <img src="/images/google.png" width="20%" height="5%" id="googleimg">
         <!-- Search bar -->
-        <div>
-          <div id="maindiv">
+        <div class="searchBar">
+          <form id="application" action="">
             <span><img src="/images/th (1).jpg"></span>
-            <span id="inputspan"><input type="text" name="search"></span>
-            <span><img src="images/th (2).jpg"></span>
-          </div>
-        </div>
+              <input id = "txt" type="text" name="query">
+              <span><img src="/images/th (2).jpg"></span>
+         </form>
+      </div>
         <!--Buttons -->
         <section>
-          <div><button id ="teams" onclick="window.location.href='teams.html'">Google Search</button></div>
-          <div><button onclick="window.location.href='chelsea.html'">I'm feeling lucky</button></div>
+          <div><button id ="teams" class = "btn1" onclick="window.location.href='teams.html'">Google Search</button></div>
+          <div><button class = "btn2" onclick="window.location.href='chelsea.html'">I'm feeling lucky</button></div>
         </section>
-        <!-- <div><a href="">Work, learn and run your bussiness from home</a></div> -->
-        <!-- <div id="Bottomdiv"> -->
-          <!-- <span>Google offered in:</span> -->
-          <!-- <ul> -->
-            <!-- <li><a href="">हिन्द</a>ी</li> -->
-            <!-- <li><a href="">বাংলা</a></li> -->
-            <!-- <li><a href="">తెలుగు</a></li> -->
-            <!-- <li><a href="">मराठी</a></li> -->
-            <!-- <li><a href="">தமிழ்</a></li> -->
-            <!-- <li><a href="">ગુજરાતી</a></li> -->
-            <!-- <li><a href="">ಕನ್ನಡ</a></li> -->
-            <!-- <li><a href="">മലയാളം</a></li> -->
-            <!-- <li><a href="">ਪੰਜਾਬੀ</a></li> -->
-          <!-- </ul> -->
-        <!-- </div> -->
       </center>
     </main>
   </body>
